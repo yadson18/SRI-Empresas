@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<title>SRI - <?= $this_->getData("Title") ?></title>
+		<title>
+			SRI Empresas - <?= $this_->getData("Title") ?>
+		</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<?php  
@@ -27,7 +29,6 @@
 					        <span class="icon-bar"></span>
 					        <span class="icon-bar"></span>
 				      	</button>
-				      	<a class="navbar-brand" href="#">SRI</a>
 				    </div>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      				<ul class="nav navbar-nav">

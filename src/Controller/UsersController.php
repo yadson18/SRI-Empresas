@@ -10,8 +10,16 @@
 
 		public function login(){
 			if($this->requestMethodIs("POST")){
-				$condition = "WHERE LOGIN = ? AND SENHA = ?";
-				$result = $this->usersDB->select("*", "COLABORADOR", $condition, [$_POST['login'], $_POST['senha']]);
+				$condition = "WHERE COD_CADASTRO = ? AND CNPJ = ?";
+				$result = $this->usersDB->select(
+					"*", 
+					"CADASTRO", 
+					$condition, 
+					[
+						toInteger($_POST['cod_cadastro']), 
+						replace($_POST['cnpj'])
+					]
+				);
 				
 				if(!empty($result)){
 					$this->isAuthorized();

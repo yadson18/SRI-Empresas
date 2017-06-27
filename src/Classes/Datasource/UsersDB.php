@@ -1,6 +1,6 @@
 <?php  
 	class UsersDB extends Connection{
-		static $dsn = 'firebird:dbname=localhost:/BD/SRICASH2.FDB';
+		static $dsn = 'firebird:dbname=/BD/SRICASH.FDB';
 		static $user = 'SYSDBA';
 		static $password = 'masterkey';
 		
